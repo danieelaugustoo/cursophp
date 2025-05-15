@@ -15,7 +15,7 @@
             $valcarteira = $_GET["r$"] ?? " ";
             $valdolar = $valcarteira * 5.68;
             echo "<p> Seus R$$valcarteira equivalem a <strong> US$$valdolar</strong></p>";
-            echo "<p>*<strong>Cotação fixa de $cotacao/strong> informada diretamente no código.</p>"
+            echo "<p>*<strong>Cotação fixa de $cotacao</strong> informada diretamente no código.</p>"
             ?>
             <button><a href="javascript:history.go(-1)">Voltar</a></button>
         </main>
