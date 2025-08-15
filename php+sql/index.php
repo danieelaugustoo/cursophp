@@ -59,7 +59,7 @@
                         }
                     }
                     ?>
-                    <a href="restrito/index.php">Cadastre-se</a>
+                    <a href="restrito/index.php" class="link-offset-2 link-underline link-underline">Cadastre-se</a>
                 </div>
             </div>
             <div class="col-3"></div>
