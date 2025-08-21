@@ -105,7 +105,7 @@
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Não</button>
-                    <input type="hidden" name="nome" id="nome_pessa_1" value="">
+                    <input type="hidden" name="nome" id="nome_pessoa_1" value="">
                     <input type="hidden" name="id" id="cod_pessoa" value="">
                     <input type="submit" class="btn btn-danger" value="Sim">
                     </form>
@@ -116,11 +116,11 @@
 
 
     <script type="text/javascript">
-    function pegar_dados(id, nome) {
-        document.getElementById('nome_pessoa').innerHTML = nome;
-        document.getElementById('nome_pessoa_1').value = nome;
-        document.getElementById('cod_pessoa').value = id;
-    }
+        function pegar_dados(id, nome) {
+            document.getElementById('nome_pessoa').innerHTML = nome;
+            document.getElementById('nome_pessoa_1').value = nome;
+            document.getElementById('cod_pessoa').value = id;
+        }
     </script>
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"

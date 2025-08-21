@@ -28,7 +28,7 @@
                             <label for="exampleInputPassword1">Senha</label>
                             <input type="password" class="form-control" name="senha">
                         </div>
-                        <button type="submit" class="btn btn-primary">Acessar</button>
+                        <button type="submit" class="mt-3 btn btn-primary">Acessar</button>
                     </form>
                     <?php
                     if (isset($_POST['login'])) {

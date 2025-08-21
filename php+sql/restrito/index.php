@@ -15,7 +15,8 @@
             <div class="col">
                 <div class="jumbotron">
                     <h1 class="display-4">Cadastro Web</h1>
-                    <p class="lead">Este é um sistema simplificado de cadastros. Base de estudos para criação de sistemas Web com PHP e MySQL.</p>
+                    <p class="lead">Este é um sistema simplificado de cadastros. Base de estudos para criação de
+                        sistemas Web com PHP e MySQL.</p>
                     <hr class="my-4">
                     <p>Acesse as funções.</p>
                     <a class="btn btn-primary btn-lg" href="cadastro.php" role="button">Cadastro</a>
@@ -29,5 +30,6 @@
             integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous">
         </script>
 </body>
+<? phpinfo() ?>
 
 </html>

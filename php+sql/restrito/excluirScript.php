@@ -1,23 +1,23 @@
 <?php
 include_once "conexao.php";
 
-
-$id = $_POST['id'] ?? null;
+$id = $_POST['id'] ?? ($_GET['id'] ?? null);
 $nome = $_POST['nome'] ?? '';
-
 
 if (!$id) {
     $mensagem = "ID inválido! Não foi possível excluir.";
     $tipo = "danger";
 } else {
-
-    $id = mysqli_real_escape_string($conn, $id);
-
-
-    $sql = "DELETE FROM pessoas WHERE cod_pessoa = '$id'";
+    $id = (int) $id;
+    $sql = "DELETE FROM pessoas WHERE cod_pessoa = $id";
     if (mysqli_query($conn, $sql)) {
-        $mensagem = "$nome excluído com sucesso!";
-        $tipo = "success";
+        if (mysqli_affected_rows($conn) > 0) {
+            $mensagem = "$nome excluído com sucesso!";
+            $tipo = "success";
+        } else {
+            $mensagem = "Nenhum registro encontrado para o ID $id.";
+            $tipo = "warning";
+        }
     } else {
         $erro = mysqli_error($conn);
         $mensagem = "Erro ao excluir $nome: $erro";
