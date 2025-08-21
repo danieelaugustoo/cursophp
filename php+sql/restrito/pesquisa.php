@@ -78,7 +78,7 @@
                       </tr>";
                         }
                         ?>
-                        <!--  onclick="pegar_dados($id, '$nome')"  O SEGREDO ESTÁ AQUI!!!-->
+
 
                     </tbody>
                 </table>

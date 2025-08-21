@@ -32,8 +32,8 @@
                     </form>
                     <?php
                     if (isset($_POST['login'])) {
-                        $login = $_POST['login'];
-                        $senha = md5($_POST['senha']);
+                        $login = mysqli_real_escape_string($conn, $sql, $_POST['login']);
+                        $senha = mysqli_real_escape_string($conn, $sql, $_POST['senha']);
 
                         include_once "restrito/conexao.php";
                         $sql = "SELECT * from `usuarios` WHERE login = '$login' AND senha = '$senha'";

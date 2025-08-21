@@ -37,4 +37,10 @@ function mover_foto($vetor_foto)
   } else {
     return 0;
   }
+  function clear($conexao, $textoPuro)
+  {
+    $texto = mysqli_real_escape_string($conexao, $textoPuro);
+    $texto = htmlspecialchars($texto);
+    return $texto;
+  }
 }
